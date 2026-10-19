@@ -1,0 +1,73 @@
+/* Thiết lập cơ bản toàn trang */
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+h2 {
+    color: #1a237e;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.example-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.example-section h3 {
+    color: #283593;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.example-section code {
+    background-color: #e8eaf6;
+    color: #1a237e;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Khung chứa Grid chung */
+.grid-container {
+    display: grid;
+    background-color: #eeeeee;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/* Ví dụ 1: grid-gap: 20px (Tương đương grid-row-gap: 20px và grid-column-gap: 20px) */
+.grid-equal {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Trong CSS hiện đại có thể viết gap: 20px; */
+}
+
+.grid-equal div {
+    background-color: lightblue;
+    color: #0d47a1;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Ví dụ 2: grid-gap: 30px 10px (Hàng 30px, Cột 10px) */
+.grid-different {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px; /* Trong CSS hiện đại có thể viết gap: 30px 10px; */
+}
+
+.grid-different div {
+    background-color: lightgreen;
+    color: #1b5e20;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
