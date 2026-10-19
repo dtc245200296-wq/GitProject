@@ -1,0 +1,162 @@
+/* 1. Định cấu hình font chữ chung cho body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #333333;
+}
+
+/* Căn giữa trang web và cố định kích thước vùng chứa chính */
+#main {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Phần Đầu Trang (Head) */
+#head {
+    height: 100px;
+    background-color: #1a237e;
+    color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#head h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* 3. Phần Menu Đầu Trang (Head-link) */
+#head-link {
+    height: 40px;
+    background-color: #283593;
+    line-height: 40px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#head-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.2s ease;
+}
+
+#head-link a:hover {
+    color: #ffeb3b;
+}
+
+/* 4. Cột Bên Trái (Left) */
+#left {
+    width: 200px;
+    min-height: 400px;
+    float: left;
+    background-color: #e8eaf6;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #c5cae9;
+    border-radius: 4px;
+}
+
+#left h3 {
+    margin-top: 0;
+    color: #1a237e;
+    font-size: 16px;
+    border-bottom: 2px solid #1a237e;
+    padding-bottom: 5px;
+}
+
+#left ul {
+    list-style: none;
+    padding: 0;
+}
+
+#left ul li {
+    margin-bottom: 10px;
+}
+
+#left ul li a {
+    color: #283593;
+    text-decoration: none;
+}
+
+/* 5. Cột Nội Dung Chính Ở Giữa (Content) */
+#content {
+    width: 520px;
+    min-height: 400px;
+    float: left;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+#content h2 {
+    margin-top: 0;
+    color: #1a237e;
+    font-size: 18px;
+}
+
+.news-item {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #ff9800;
+}
+
+/* 6. Cột Bên Phải (Right) */
+#right {
+    width: 200px;
+    min-height: 400px;
+    float: right;
+    background-color: #e8eaf6;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #c5cae9;
+    border-radius: 4px;
+}
+
+#right h3 {
+    margin-top: 0;
+    color: #1a237e;
+    font-size: 16px;
+    border-bottom: 2px solid #1a237e;
+    padding-bottom: 5px;
+}
+
+.widget {
+    background-color: #ffffff;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+}
+
+/* 7. Phần Chân Trang (Footer) */
+#footer {
+    clear: both; /* Thoát khỏi dòng chảy float của các cột bên trên */
+    height: 60px;
+    background-color: #1a237e;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 14px;
+}
