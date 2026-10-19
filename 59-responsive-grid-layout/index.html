@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Web Layout</title>
+    <!-- Nhúng CSS tùy chỉnh -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="layout-overlay">
+        <div class="gridcontainer">
+            <!-- Header Banner Section -->
+            <div class="gridwrapper h-90">
+                <div class="gridcontent w-100 bg-header border-none"></div>
+            </div>
+
+            <!-- Main Section: Sidebar + Content + Banner -->
+            <div class="gridwrapper h-230">
+                <!-- Sidebar Menu (Col-3 / 25%) -->
+                <div class="gridcontent w-25 bg-white border-none pt-15">
+                    <div class="menu-item"></div>
+                    <div class="menu-item"></div>
+                    <div class="menu-item"></div>
+                    <div class="menu-item mb-0"></div>
+                </div>
+
+                <!-- Empty Content Columns -->
+                <div class="gridcontent bg-white border-none"></div>
+                <div class="gridcontent bg-white border-none"></div>
+                <div class="gridcontent bg-white border-none"></div>
+                <div class="gridcontent bg-white border-none"></div>
+                <div class="gridcontent bg-white border-none"></div>
+                <div class="gridcontent bg-white border-none"></div>
+
+                <!-- Right Feature Block (Col-3 / 25%) -->
+                <div class="gridcontent w-25 bg-white border-none pt-15">
+                    <div class="feature-block"></div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <div class="gridwrapper h-50">
+                <div class="gridcontent w-100 bg-footer border-none"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background 12-Column Grid Guide (Opacity 0.1) -->
+    <div class="gridcontainer grid-bg-guide">
+        <div class="gridwrapper h-370">
+            <div class="gridcontent bg-white border-both"></div>
+            <div class="gridcontent bg-white"></div>
+            <div class="gridcontent bg-white"></div>
+            <div class="gridcontent bg-white"></div>
+            <div class="gridcontent bg-white"></div>
+            <div class="gridcontent bg-white"></div>
+            <div class="gridcontent bg-white"></div>
+            <div class="gridcontent bg-white"></div>
+            <div class="gridcontent bg-white"></div>
+            <div class="gridcontent bg-white"></div>
+            <div class="gridcontent bg-white"></div>
+            <div class="gridcontent bg-white"></div>
+        </div>
+    </div>
+
+    <!-- Instruction Note -->
+    <p class="description-text">
+        Thay đổi kích thước cửa sổ trình duyệt để quan sát bố cục lưới (Grid Layout) tự động co giãn Responsive theo 100% không gian hiển thị.
+    </p>
+
+</body>
+</html>
