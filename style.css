@@ -1,0 +1,61 @@
+/* Định dạng trang chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Quy tắc CSS dùng chung cho các thẻ .card */
+.card {
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid #3498db;  /* Viền màu xanh dương */
+    margin: 20px;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.card code {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Thẻ 1: content-box - Màu xanh lá cây (#2ecc71) */
+.card:nth-child(1) {
+    box-sizing: content-box;
+    background-color: #2ecc71;
+}
+
+/* Thẻ 2: border-box - Màu vàng (#f1c40f) */
+.card:nth-child(2) {
+    box-sizing: border-box;
+    background-color: #f1c40f;
+    color: #2c3e50; /* Đổi màu chữ tối cho dễ đọc trên nền vàng */
+}
+
+/* Thẻ 3: border-box - Màu đỏ (#e74c3c) */
+.card:nth-child(3) {
+    box-sizing: border-box;
+    background-color: #e74c3c;
+}

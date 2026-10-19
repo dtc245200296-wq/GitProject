@@ -3,36 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên kết yêu thích của tôi</title>
+    <title>Thực hành Tạo Menu Ngang Dropdown</title>
+    <style>
+        /* 1. Reset CSS cơ bản & Cài đặt phông chữ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            background-color: #f4f6f8;
+        }
+
+        /* 2. Định dạng phân vùng menu chính (#menu) */
+        #menu {
+            height: 40px;
+            background-color: #333333;
+            border-radius: 4px;
+        }
+
+        #menu ul {
+            list-style-type: none;
+        }
+
+        /* 3. Định dạng các phần tử menu cấp 1 (xếp nằm ngang) */
+        #menu > ul > li {
+            float: left;
+            position: relative; /* Làm gốc mốc vị trí cho menu con thả xuống */
+        }
+
+        /* 4. Định dạng các đường liên kết (thẻ a) */
+        #menu a {
+            display: block;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;  /* Căn giữa chữ theo chiều dọc */
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /* 5. Chuyển màu nền liên kết sang màu đỏ khi rê chuột qua */
+        #menu a:hover {
+            background-color: #d32f2f; /* Màu đỏ */
+        }
+
+        /* 6. Định dạng danh sách con (Submenu thả xuống) */
+        #menu ul ul {
+            position: absolute;
+            top: 40px;          /* Xuất hiện ngay bên dưới thanh menu chính */
+            left: 0;
+            background-color: #444444;
+            visibility: hidden; /* Mặc định ẩn danh sách con */
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #menu ul ul li {
+            position: relative;
+        }
+
+        #menu ul ul a {
+            width: 180px;       /* Chiều rộng menu con cho chữ thoải mái */
+            text-align: left;
+            padding-left: 15px;
+            height: 38px;
+            line-height: 38px;
+            border-bottom: 1px solid #555555;
+        }
+
+        #menu ul ul a:hover {
+            background-color: #b71c1c; /* Màu đỏ đậm cho menu con */
+        }
+
+        /* 7. Hiển thị menu con khi di chuột qua phần tử li tương ứng của menu cha */
+        #menu li:hover > ul {
+            visibility: visible;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Tiêu đề chính h1 -->
-    <h1>Liên kết yêu thích của tôi</h1>
+    <h2>Thực Hành Menu Ngang Dropdown</h2>
+    <p style="margin-bottom: 20px; color: #555;">Rê chuột vào các mục có ký hiệu mũi tên để xem menu thả xuống.</p>
 
-    <!-- Danh sách liên kết không có thứ tự (ul) -->
-    <ul>
-        <!-- Liên kết mở trong tab mới bằng target="_blank" -->
-        <li>
-            <a href="https://google.com" target="_blank">Trang tìm kiếm Google (Mở tab mới)</a>
-        </li>
-        <li>
-            <a href="https://github.com" target="_blank">Trang chủ GitHub</a>
-        </li>
-        <li>
-            <a href="https://codegym.vn" target="_blank">Trang chủ CodeGym</a>
-        </li>
-
-        <!-- Liên kết tới file about.html trong cùng thư mục -->
-        <li>
-            <a href="about.html">Giới thiệu bản thân (Đến trang about.html)</a>
-        </li>
-
-        <!-- Liên kết tới email (mailto:) -->
-        <li>
-            <a href="mailto:emailcuaban@gmail.com">Gửi email trực tiếp cho tôi</a>
-        </li>
-    </ul>
+    <!-- Cấu trúc Menu ngang Dropdown lồng nhau -->
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Sản phẩm &#9662;</a>
+                <ul>
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Máy tính bảng</a></li>
+                    <li><a href="#">Laptop</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Dịch vụ &#9662;</a>
+                <ul>
+                    <li><a href="#">Bảo hành</a></li>
+                    <li><a href="#">Sửa chữa</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
 
 </body>
 </html>
