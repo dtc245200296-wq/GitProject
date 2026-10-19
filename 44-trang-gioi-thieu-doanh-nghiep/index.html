@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Doanh Nghiệp</title>
+    <!-- Nhúng Bootstrap 5.3 CSS từ CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Tệp CSS tùy chỉnh -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold fs-4" href="#">Doanh Nghiệp</a>
+            
+            <!-- Nút Toggler mở menu trên Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Danh sách menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Về Chúng Tôi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Dịch Vụ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <header class="bg-primary text-white text-center py-5 shadow-sm">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold mb-3">Chào mừng đến với Công Ty Chúng Tôi</h1>
+            <p class="lead mb-4">Chúng tôi cung cấp các giải pháp chuyên nghiệp, tiên tiến và tối ưu cho sự phát triển bền vững của doanh nghiệp bạn.</p>
+            <a href="#services" class="btn btn-light btn-lg text-primary fw-bold px-4 shadow-sm">Tìm Hiểu Ngay</a>
+        </div>
+    </header>
+
+    <!-- 3. About Section -->
+    <section id="about" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="fw-bold text-primary mb-3">Về Chúng Tôi</h2>
+                <div class="divider bg-primary mx-auto mb-4" style="height: 3px; width: 60px;"></div>
+                <p class="lead text-secondary">
+                    Công ty chúng tôi chuyên cung cấp các giải pháp công nghệ hiện đại, dịch vụ thiết kế website chuẩn SEO và chiến lược tiếp thị kỹ thuật số toàn diện. Với đội ngũ chuyên gia giàu kinh nghiệm, chúng tôi cam kết mang lại giá trị đột phá cho đối tác.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold text-primary mb-2">Dịch Vụ Của Chúng Tôi</h2>
+            <p class="text-center text-muted mb-5">Mang đến sự hài lòng tối đa với chất lượng hàng đầu</p>
+
+            <div class="row g-4">
+                <!-- Dịch vụ 1 -->
+                <div class="col-md-4 text-center">
+                    <div class="card p-4 border-0 shadow-sm h-100 hover-card">
+                        <div class="card-body">
+                            <div class="icon-box bg-primary-subtle text-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                                    <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9.006v2h1.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h1.5v-2H1a1 1 0 0 1-1-1V1zm1 1v8h14V2H1z"/>
+                                </svg>
+                            </div>
+                            <h3 class="h4 card-title fw-bold">Thiết kế Website</h3>
+                            <p class="card-text text-secondary mt-2">Thiết kế giao diện chuyên nghiệp, tối ưu hóa trải nghiệm người dùng và chuẩn tương thích thiết bị di động.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dịch vụ 2 -->
+                <div class="col-md-4 text-center">
+                    <div class="card p-4 border-0 shadow-sm h-100 hover-card">
+                        <div class="card-body">
+                            <div class="icon-box bg-success-subtle text-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">
+                                    <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214l-1.975-1.185A.5.5 0 0 1 11 11.67V4.33a.5.5 0 0 1 .025-.158L13 2.986V2.5zm-1 2.213l.971-.583v7.74l-.971-.583V4.713zM10 5.108L3.2 1.028A.5.5 0 0 0 2.5 1.5v13a.5.5 0 0 0 .7.472L10 10.892V5.108zM3.5 2.578L9 5.878v4.244l-5.5 3.3V2.578z"/>
+                                </svg>
+                            </div>
+                            <h3 class="h4 card-title fw-bold">Marketing Online</h3>
+                            <p class="card-text text-secondary mt-2">Giải pháp tiếp thị số đa kênh giúp nâng cao độ nhận diện thương hiệu và tiếp cận khách hàng mục tiêu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dịch vụ 3 -->
+                <div class="col-md-4 text-center">
+                    <div class="card p-4 border-0 shadow-sm h-100 hover-card">
+                        <div class="card-body">
+                            <div class="icon-box bg-warning-subtle text-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                                    <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866-.5l-1-1.732a1 1 0 0 1 .866-1.5H11.5A1.5 1.5 0 0 0 13 12V6a5 5 0 0 0-5-5z"/>
+                                </svg>
+                            </div>
+                            <h3 class="h4 card-title fw-bold">Hỗ trợ khách hàng</h3>
+                            <p class="card-text text-secondary mt-2">Chúng tôi cam kết đồng hành và hỗ trợ kỹ thuật tận tâm 24/7 trong suốt quá trình vận hành dự án.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="container py-5 text-center">
+        <h2 class="fw-bold text-primary mb-3">Liên Hệ Với Chúng Tôi</h2>
+        <p class="text-secondary mb-4">Hãy kết nối ngay hôm nay để nhận được sự tư vấn chi tiết từ đội ngũ chuyên gia.</p>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-6 bg-light p-4 rounded-3 shadow-sm">
+                <p class="fs-5 mb-2"><strong>Email:</strong> contact@company.com</p>
+                <p class="fs-5 mb-0"><strong>Hotline:</strong> 0988 123 456</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer Section -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Công Ty Chúng Tôi. All rights reserved. | CodeGym Practice</p>
+        </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap 5.3 Bundle JavaScript từ CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
