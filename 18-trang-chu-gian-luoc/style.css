@@ -1,0 +1,105 @@
+/* Thiết lập cơ bản toàn trang */
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 1500px; /* Đảm bảo đủ độ dài để kiểm tra hiệu ứng cuộn trang */
+    padding-top: 70px;  /* Bù lại chiều cao header cố định để không bị đè chữ */
+    box-sizing: border-box;
+}
+
+/* 1. Header cố định (Fixed Header) */
+.main-header {
+    position: fixed;            /* Cố định header tương đối với cửa sổ trình duyệt */
+    top: 0;                     /* Dính ở mép trên cùng */
+    left: 0;                    /* Dính ở mép trái */
+    width: 100%;                /* Phủ full chiều rộng màn hình */
+    background-color: #333333;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;              /* Kích hoạt Flexbox căn chỉnh phần tử con */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;              /* Đảm bảo Header luôn nằm nổi trên nội dung khi cuộn */
+    box-sizing: border-box;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-header nav ul li {
+    margin-left: 20px;
+}
+
+.main-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* 2. Bố cục Flexbox 3 cột (Sidebar trái + Main + Sidebar phải) */
+.page-container {
+    display: flex;              /* Kích hoạt Flexbox cho khung chứa chính */
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;                  /* Khoảng cách giữa các cột */
+}
+
+.sidebar {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;             /* Ngăn sidebar bị co hẹp kích thước */
+}
+
+.left-sidebar {
+    width: 200px;               /* Chiều rộng cố định cho Sidebar Trái */
+}
+
+.right-sidebar {
+    width: 200px;               /* Chiều rộng cố định cho Sidebar Phải */
+}
+
+.main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;               /* Chiếm toàn bộ khoảng trống còn lại giữa 2 sidebar */
+}
+
+/* Trang trí các phần tử trong Sidebar */
+.sidebar h3 {
+    margin-top: 0;
+    color: #333333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    color: #555555;
+}
