@@ -1,0 +1,44 @@
+/* Thiết lập cơ bản toàn trang */
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+h2 {
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+/* Khung chứa 100% chiều rộng */
+.container {
+    width: 100%;
+}
+
+/* Cột bên trái: Chiếm 60%, trôi về bên trái */
+.left-column {
+    width: 60%;
+    float: left;
+    background-color: lightblue;
+    padding: 20px;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng tổng */
+    border-radius: 5px;
+}
+
+/* Cột bên phải: Chiếm 38%, trôi về bên phải */
+.right-column {
+    width: 38%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng tổng */
+    border-radius: 5px;
+}
+
+/* Kỹ thuật Clearfix (Xử lý lỗi tràn dòng do float gây ra) */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
