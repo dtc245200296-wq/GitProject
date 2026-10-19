@@ -1,0 +1,82 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #1a237e;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666666;
+    font-size: 14px;
+}
+
+/* Khung chứa Gallery dùng Flexbox */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Tạo khoảng trống đồng đều cho padding con */
+}
+
+.gallery-item {
+    padding: 10px;
+    /* Mặc định trên màn hình lớn > 700px: 4 ảnh / dòng (25%) */
+    width: 25%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
+}
+
+.desc {
+    padding: 12px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    font-size: 14px;
+    color: #555555;
+}
+
+/* 1. Với màn hình nhỏ hơn hoặc bằng 700px: Hiển thị 2 ảnh / dòng (50%) */
+@media screen and (max-width: 700px) {
+    .gallery-item {
+        width: 50%;
+    }
+}
+
+/* 2. Với màn hình nhỏ hơn hoặc bằng 500px: Hiển thị 1 ảnh / dòng (100%) */
+@media screen and (max-width: 500px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    color: #777777;
+    font-size: 13px;
+}
