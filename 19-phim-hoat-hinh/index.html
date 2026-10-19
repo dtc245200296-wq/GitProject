@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoạt Hình Kids - Trang Xem Phim Hoạt Hình Trực Tuyến</title>
+    <!-- Liên kết tệp CSS cùng thư mục -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header cố định có Logo và Tìm kiếm -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">🎬</span>
+            <h1>Hoạt Hình <span>Kids</span></h1>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm phim hoạt hình...">
+            <button>Tìm kiếm</button>
+        </div>
+    </header>
+
+    <!-- 2. Head-link (Menu điều hướng) -->
+    <nav class="head-link">
+        <ul>
+            <li><a href="#" class="active">Trang chủ</a></li>
+            <li><a href="#">Phim mới cập nhật</a></li>
+            <li><a href="#">Xem nhiều nhất</a></li>
+            <li><a href="#">Thể loại</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- 3. Content: Bố cục 2 cột (Menu danh sách video & Khung phát video) -->
+    <div class="main-container">
+        <!-- Left Content: Danh sách video có sẵn -->
+        <aside class="left-content">
+            <h3>Danh sách phim hay</h3>
+            <ul class="video-list">
+                <li class="video-item active">
+                    <span class="badge">Đang xem</span>
+                    <h4>Doraemon - Tập 1: Chú Mèo Máy Đến Từ Tương Lai</h4>
+                </li>
+                <li class="video-item">
+                    <span class="badge hd">HD</span>
+                    <h4>Thám Tử Lừng Danh Conan - Tập 1</h4>
+                </li>
+                <li class="video-item">
+                    <span class="badge hd">HD</span>
+                    <h4>Tom & Jerry - Tập Đặc Biệt Thuyết Minh</h4>
+                </li>
+                <li class="video-item">
+                    <span class="badge hd">HD</span>
+                    <h4>Shin - Cậu Bé Bút Chì Thuyết Minh</h4>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Right Content: Khu vực xem video chính -->
+        <main class="right-content">
+            <div class="video-player-container">
+                <!-- Nhúng video bằng iframe YouTube (Chất lượng HD, không quảng cáo) -->
+                <iframe 
+                    src="https://www.youtube.com/embed/M7lc1UVf-VE" 
+                    title="Video Hoạt Hình" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="video-info">
+                <h2>Doraemon - Tập 1: Chú Mèo Máy Đến Từ Tương Lai (Thuyết Minh HD)</h2>
+                <div class="video-meta">
+                    <span>👁️ 1.250.000 lượt xem</span> • 
+                    <span>⭐ Chất lượng: 1080p Full HD</span> • 
+                    <span>🎙️ Thuyết minh Tiếng Việt</span>
+                </div>
+                <p class="description">
+                    Nội dung phim giáo dục, vui nhộn và an toàn cho trẻ em. Phim kể về chú mèo máy Doraemon đến từ thế kỷ 22 để giúp đỡ cậu bé Nobita hậu đậu thông qua các bảo bối kỳ diệu.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <!-- 4. Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Hoạt Hình Kids. Bản quyền thuộc về trang web phim hoạt hình an toàn cho trẻ em.</p>
+    </footer>
+
+</body>
+</html>
