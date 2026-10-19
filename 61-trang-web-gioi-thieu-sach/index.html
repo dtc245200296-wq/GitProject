@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Showcase Landing Page</title>
+
+    <!-- Bootstrap 4.6.0 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome v5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS (Gợi ý đặt cùng thư mục) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS Libraries & Custom Main JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><i class="fas fa-book-reader fa-2x"></i> Books</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <i class="fas fa-align-right text-light"></i>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#author">COURSE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#price">PRICE</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">PAGES</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Generic</a>
+                                <a class="dropdown-item" href="#">Element</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#features">FACT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#author">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container text-center hero-content">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-sm-12 text-white text-md-left text-center">
+                    <h6>AUTHOR: DAILY TUITION</h6>
+                    <h1>EXCITING ADVENTURE</h1>
+                    <p>Khám phá thế giới lập trình web chuyên nghiệp với lộ trình thực hành thực tế, trực quan và tối ưu nhất.</p>
+                    <button class="btn btn-light primary-btn px-5 py-2">Buy now for $5.99</button>
+                </div>
+                <div class="col-md-5 col-sm-12 mt-4 mt-md-0">
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80" alt="Book Cover" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Author -->
+        <section class="section-1" id="author">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" width="100%" class="rounded shadow" alt="Mr. Devid Smith"/>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="panel text-left mt-4 mt-md-0">
+                            <h1>Mr. Devid Smith</h1>
+                            <p class="pt-4">Tác giả kiêm chuyên gia huấn luyện lập trình Frontend với hơn 10 năm kinh nghiệm thực chiến tại các tập đoàn công nghệ lớn.</p>
+                            <p>Cuốn sách đúc kết những kiến thức nền tảng vững chắc cùng bộ dự án thực tế giúp học viên nâng cao kỹ năng tư duy và tối ưu mã nguồn chuyên nghiệp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Numbers & Purchase -->
+        <section class="section-2 container-fluid p-0" id="features">
+            <div class="cover">
+                <div class="content text-center text-white">
+                    <h1>Some Features That Make Us Unique</h1>
+                    <p>Những con số ấn tượng chứng minh giá trị cuốn sách mang lại cho độc giả.</p>
+                </div>
+            </div>
+
+            <div class="container-fluid text-center">
+                <div class="d-flex flex-wrap justify-content-center numbers">
+                    <div class="rect shadow-lg">
+                        <h1>2345</h1>
+                        <p>Happy Client</p>
+                    </div>
+                    <div class="rect shadow-lg">
+                        <h1>6784</h1>
+                        <p>Happy Client</p>
+                    </div>
+                    <div class="rect shadow-lg">
+                        <h1>1056</h1>
+                        <p>Tickets Submitted</p>
+                    </div>
+                    <div class="rect shadow-lg">
+                        <h1>9152</h1>
+                        <p>Total Project</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="purchase text-center" id="price">
+                <h1>Purchase Whatever You Want</h1>
+                <p>Lựa chọn định dạng phù hợp nhất để sở hữu cuốn sách ngay hôm nay.</p>
+
+                <div class="cards">
+                    <div class="d-flex flex-row justify-content-center flex-wrap">
+                        <div class="card shadow-lg">
+                            <div class="card-body">
+                                <h5 class="card-title">PDF</h5>
+                                <p class="card-text">Bản đọc điện tử chất lượng cao hiển thị hoàn hảo trên máy tính và máy tính bảng.</p>
+                                <div class="pricing">
+                                    <h1>$77.99</h1>
+                                    <a href="#" class="btn btn-dark py-2 px-5 mb-3 primary-btn">Purchase Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-lg">
+                            <div class="card-body">
+                                <h5 class="card-title">E-book</h5>
+                                <p class="card-text">Định dạng tối ưu hóa cho các thiết bị đọc sách chuyên dụng như Kindle, Kobo.</p>
+                                <div class="pricing">
+                                    <h1>$99.99</h1>
+                                    <a href="#" class="btn btn-dark py-2 px-5 mb-3 primary-btn">Purchase Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-lg">
+                            <div class="card-body">
+                                <h5 class="card-title">Print Version</h5>
+                                <p class="card-text">Sách in bìa mềm chất lượng cao kèm đĩa DVD chứa toàn bộ bài tập thực hành.</p>
+                                <div class="pricing">
+                                    <h1>$58.99</h1>
+                                    <a href="#" class="btn btn-dark py-2 px-5 mb-3 primary-btn">Purchase Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Download Platforms -->
+        <section class="section-3 container-fluid p-0 text-center">
+            <div class="row m-0">
+                <div class="col-md-12 col-sm-12">
+                    <h1>Download Our App for all Platforms</h1>
+                    <p class="max-w-700 mx-auto">Hỗ trợ đa nền tảng giúp bạn học tập mọi lúc, mọi nơi trên thiết bị yêu thích.</p>
+                </div>
+            </div>
+            <div class="platform row m-0">
+                <div class="col-md-6 col-sm-12 text-md-right text-center my-2">
+                    <div class="desktop shadow-lg d-inline-block">
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                            <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+                            <div class="text-left">
+                                <h3 class="pt-1 m-0">Desktop</h3>
+                                <p class="p-0 m-0">On website</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 text-md-left text-center my-2">
+                    <div class="desktop shadow-lg d-inline-block">
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                            <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
+                            <div class="text-left">
+                                <h3 class="pt-1 m-0">On Mobile</h3>
+                                <p class="p-0 m-0">On Play Store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Readers Say -->
+        <section class="section-4">
+            <div class="container text-center mb-5">
+                <h1>What our Reader's Say about us</h1>
+                <p>Cảm nhận chân thực từ cộng đồng độc giả và các chuyên gia.</p>
+            </div>
+            <div class="team row container mx-auto">
+                <div class="col-md-4 col-12 text-center my-3">
+                    <div class="card mr-2 d-inline-block shadow-lg border-0">
+                        <div class="card-img-top">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" class="img-fluid p-4 border-radius rounded-circle avatar-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Blalock Jolene</h3>
+                            <p class="card-text">Cuốn sách vô cùng tuyệt vời, nội dung thiết thực giúp tôi nâng cao kỹ năng nhanh chóng.</p>
+                            <p class="text-secondary font-weight-bold">CEO at Google</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 text-center my-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card mr-2 d-inline-block shadow-lg border-0">
+                                    <div class="card-img-top">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" class="img-fluid p-4 border-radius rounded-circle avatar-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Allen Agnes</h3>
+                                        <p class="card-text">Trình bày cô đọng, dễ hiểu. Rất phù hợp cho cả người mới bắt đầu lẫn coder muốn ôn lại nền tảng.</p>
+                                        <p class="text-secondary font-weight-bold">CEO at Google</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mr-2 d-inline-block shadow-lg border-0">
+                                    <div class="card-img-top">
+                                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" class="img-fluid p-4 border-radius rounded-circle avatar-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Amiel Barbara</h3>
+                                        <p class="card-text">Bộ dự án đi kèm rất chất lượng, giúp tôi xây dựng ngay Portfolio ứng tuyển công việc thành công.</p>
+                                        <p class="text-secondary font-weight-bold">CEO at Google</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 text-center my-3">
+                    <div class="card mr-2 d-inline-block shadow-lg border-0">
+                        <div class="card-img-top">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" class="img-fluid p-4 border-radius rounded-circle avatar-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Olivia Louis</h3>
+                            <p class="card-text">Sách gối đầu giường đáng đầu tư nhất cho bất kỳ ai muốn nắm vững Bootstrap và CSS Responsive.</p>
+                            <p class="text-secondary font-weight-bold">CEO at Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 mb-4">
+                    <h4 class="text-light">About us</h4>
+                    <p class="text-muted">Chúng tôi mang đến giải pháp học tập lập trình hiện đại và các ấn phẩm sách chuyên ngành chất lượng nhất.</p>
+                    <p class="text-muted">Copyright ©2026 All rights reserved | This template is made with by <span>Daily Tuition</span></p>
+                </div>
+                <div class="col-md-5 col-sm-12 mb-4">
+                    <h4 class="text-light">Newsletter</h4>
+                    <p class="text-muted">Stay Updated</p>
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Email">
+                            <div class="input-group-append">
+                                <button class="btn btn-warning" type="button">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2 col-sm-12 mb-4">
+                    <h4 class="text-light">Follow Us</h4>
+                    <p class="text-muted">Let us be social</p>
+                    <div class="text-light social-icons">
+                        <i class="fab fa-facebook-f mr-3"></i>
+                        <i class="fab fa-instagram mr-3"></i>
+                        <i class="fab fa-twitter mr-3"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
