@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Trang Web Với Các Thẻ HTML5</title>
+    <!-- Liên kết tệp CSS cùng thư mục -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Thẻ <header>: Đầu trang web -->
+    <header>
+        <h1>Trang Web Bố Cục Chuẩn HTML5 Semantic</h1>
+        <p>Sử dụng các thẻ ngữ nghĩa header, nav, section, article, aside và footer</p>
+    </header>
+
+    <!-- 2. Thẻ <nav>: Thanh điều hướng menu -->
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Bài viết</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Khung chứa phần nội dung chính và sidebar -->
+    <div class="container">
+        
+        <!-- 3. Thẻ <section>: Khu vực nội dung chính -->
+        <section class="main-content">
+            
+            <!-- Thẻ <article>: Bài viết thứ 1 -->
+            <article>
+                <h2>Thẻ HTML5 Ngữ Nghĩa (Semantic Tags) Là Gì?</h2>
+                <p class="meta">Đăng ngày: 20/10/2026 | Tác giả: Học viên CodeGym</p>
+                <p>Các thẻ HTML5 như <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> và <code>&lt;footer&gt;</code> giúp trình duyệt và công cụ tìm kiếm hiểu rõ cấu trúc nội dung của trang web hơn so với việc chỉ sử dụng thẻ <code>&lt;div&gt;</code> thông thường.</p>
+            </article>
+
+            <!-- Thẻ <article>: Bài viết thứ 2 -->
+            <article>
+                <h2>Lợi Ích Khi Sử Dụng HTML5 Layout</h2>
+                <p>1. <strong>Tối ưu hóa SEO:</strong> Các Search Engine như Google dễ dàng phân tích cấu trúc bài viết.<br>
+                2. <strong>Dễ bảo trì mã nguồn:</strong> Cấu trúc sạch sẽ, dễ đọc và dễ mở rộng.<br>
+                3. <strong>Hỗ trợ Accessibility:</strong> Giúp các thiết bị đọc màn hình cho người khiếm thị truy cập tốt hơn.</p>
+            </article>
+
+        </section>
+
+        <!-- 4. Thẻ <aside>: Cột tin phụ / Sidebar bên cạnh -->
+        <aside class="sidebar">
+            <h3>Bài Viết Nổi Bật</h3>
+            <ul>
+                <li><a href="#">Hướng dẫn HTML5 từ A-Z</a></li>
+                <li><a href="#">Bố cục Flexbox hiện đại</a></li>
+                <li><a href="#">CSS Responsive cơ bản</a></li>
+            </ul>
+
+            <h3>Về Tác Giả</h3>
+            <p>Trang web mẫu được thiết kế bởi học viên CodeGym áp dụng kiến thức dàn trang HTML5 & CSS.</p>
+        </aside>
+
+    </div>
+
+    <!-- 5. Thẻ <footer>: Chân trang web -->
+    <footer>
+        <p>&copy; 2026 CodeGym. Tất cả các quyền được bảo lưu | Thiết kế bằng các thẻ HTML5 Semantic.</p>
+    </footer>
+
+</body>
+</html>
