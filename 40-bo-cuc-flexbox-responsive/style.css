@@ -1,0 +1,115 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+/* 1. Thiết lập Flexbox dọc cho toàn bộ trang web */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Đảm bảo phủ kín chiều cao màn hình */
+}
+
+.header {
+    background-color: #1a237e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 22px;
+}
+
+.nav {
+    background-color: #283593;
+    padding: 12px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.nav ul li a:hover {
+    color: #ffb74d;
+}
+
+/* 2. Khung chứa chính (Main Container) áp dụng Flexbox ngang */
+.main-container {
+    display: flex;
+    flex: 1; /* Tự động co giãn chiếm toàn bộ phần khoảng trống còn lại */
+}
+
+.content {
+    flex: 3; /* Content chiếm 3 phần (75%) */
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+.content h2 {
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+.content code {
+    background-color: #e8eaf6;
+    color: #1a237e;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.sidebar {
+    flex: 1; /* Sidebar chiếm 1 phần (25%) */
+    background-color: #e8eaf6;
+    padding: 25px;
+    border-left: 1px solid #c5cae9;
+}
+
+.sidebar h3 {
+    color: #1a237e;
+    margin-bottom: 12px;
+}
+
+.footer {
+    background-color: #1a237e;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* 3. Responsive cho Mobile (Màn hình dưới 768px) */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Chuyển Content & Sidebar thành xếp dọc */
+    }
+
+    .sidebar {
+        border-left: none;
+        border-top: 1px solid #c5cae9;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

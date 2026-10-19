@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố Cục Flexbox Responsive</title>
+    <!-- Liên kết tệp CSS cùng thư mục -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung chứa chính (Container) -->
+    <div class="container">
+        
+        <!-- Header -->
+        <header class="header">
+            <h1>Header - Bố Cục Trang Web Với CSS Flexbox</h1>
+        </header>
+
+        <!-- Navigation Menu -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Container (Chứa Content & Sidebar) -->
+        <div class="main-container">
+            <!-- Nội dung chính -->
+            <main class="content">
+                <h2>Nội dung chính (Main Content)</h2>
+                <p>Đây là phần nội dung chính được dàn trang sử dụng thuộc tính <code>flex: 3;</code> trong Flexbox.</p>
+                <p>Hãy thử thu nhỏ kích thước trình duyệt xuống dưới <strong>768px</strong> để kiểm tra tính năng Responsive (Sidebar sẽ tự động xếp xuống phía dưới Content).</p>
+            </main>
+
+            <!-- Thanh bên (Sidebar) -->
+            <aside class="sidebar">
+                <h3>Sidebar</h3>
+                <p>Khu vực hiển thị thông tin phụ, quảng cáo, tin nổi bật hoặc liên kết nhanh.</p>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Footer - Bản quyền &copy; 2026 CodeGym</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
