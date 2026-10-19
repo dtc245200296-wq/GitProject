@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Landing Page với Hình Ảnh</title>
+    <!-- Nhúng CSS Bootstrap 5.3 từ CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Nhúng Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Tệp CSS tùy chỉnh -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- 1. Navbar Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold fs-4" href="#">
+                <i class="bi bi-rocket-takeoff me-2"></i>TechLanding
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Giới Thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Tính Năng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cta">Đăng Ký</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero / Banner Section (Bootstrap 5 Utility Classes replacing Jumbotron) -->
+    <header class="hero-section bg-dark text-white text-center text-lg-start py-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 fw-semibold">Giải Pháp Công Nghệ 2026</span>
+                    <h1 class="display-4 fw-bold mb-3">Xây Dựng Website Đột Phá Với Bootstrap 5</h1>
+                    <p class="lead text-light mb-4">Tối ưu hóa trải nghiệm người dùng, tốc độ tải trang vượt trội và khả năng tương thích hoàn hảo trên mọi thiết bị di động.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="#cta" class="btn btn-primary btn-lg fw-bold px-4 shadow-sm">Đăng Ký Ngay</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg px-4">Tìm Hiểu Thêm</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-lg border border-secondary" alt="Hero Banner Workstation">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Giới Thiệu Section (Row chứa Hình ảnh + Nội dung) -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-sm" alt="Đội ngũ phát triển">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold text-primary mb-3">Giải Pháp Số Hóa Hàng Đầu Cho Doanh Nghiệp</h2>
+                    <p class="text-secondary lead">Chúng tôi kết hợp giữa thiết kế sáng tạo và nền tảng kỹ thuật vững chắc để giúp thương hiệu của bạn tỏa sáng trên môi trường trực tuyến.</p>
+                    <ul class="list-unstyled text-secondary mt-3">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Giao diện Responsive chuẩn thiết bị di động.</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Cấu trúc mã nguồn chuẩn SEO Google.</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Bảo mật cao và tốc độ phản hồi siêu nhanh.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Danh Sách Tính Năng (Row gồm 4 cột với Icon + Tiêu đề + Mô tả) -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary">Tính Năng Nổi Bật</h2>
+                <p class="text-muted">Những công nghệ tiên tiến giúp dự án của bạn tăng trưởng mạnh mẽ</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tính năng 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center hover-card">
+                        <div class="feature-icon bg-primary-subtle text-primary mx-auto mb-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-lightning-charge fs-2"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">Tốc Độ Siêu Nhanh</h3>
+                        <p class="text-secondary small mt-2">Tối ưu hóa hình ảnh và tài nguyên giúp website đạt điểm tuyệt đối trên Google PageSpeed.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center hover-card">
+                        <div class="feature-icon bg-success-subtle text-success mx-auto mb-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-phone fs-2"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">Chuẩn Responsive</h3>
+                        <p class="text-secondary small mt-2">Hiển thị mượt mà trên tất cả màn hình từ Mobile, Tablet cho đến Desktop màn hình rộng.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center hover-card">
+                        <div class="feature-icon bg-warning-subtle text-warning mx-auto mb-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-shield-check fs-2"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">Bảo Mật Cao</h3>
+                        <p class="text-secondary small mt-2">Tích hợp các tiêu chuẩn mã hóa tiên tiến bảo vệ dữ liệu người dùng an toàn tuyệt đối.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 p-4 border-0 shadow-sm text-center hover-card">
+                        <div class="feature-icon bg-danger-subtle text-danger mx-auto mb-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-headset fs-2"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">Hỗ Trợ 24/7</h3>
+                        <p class="text-secondary small mt-2">Đội ngũ kỹ thuật viên tận tâm luôn sẵn sàng giải đáp thắc mắc của bạn mọi lúc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Nút Kêu Gọi Hành Động (CTA Section) -->
+    <section id="cta" class="bg-primary text-white text-center py-5">
+        <div class="container py-4">
+            <h2 class="display-6 fw-bold mb-3">Sẵn Sàng Nâng Tầm Doanh Nghiệp Của Bạn?</h2>
+            <p class="lead mb-4 opacity-75">Đăng ký ngay hôm nay để nhận được tư vấn miễn phí từ các chuyên gia hàng đầu.</p>
+            <a href="#" class="btn btn-warning btn-lg fw-bold text-dark px-5 py-3 shadow hover-scale">Đăng Ký Trải Nghiệm Ngay</a>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2026 TechLanding. All rights reserved. | CodeGym Bootstrap Practice</p>
+        </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap 5.3 JavaScript Bundle từ CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
