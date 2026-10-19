@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành Bootstrap Navbar</title>
+    <!-- Nhúng CSS Bootstrap 5.3 từ CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Tệp CSS tùy chỉnh (nếu cần) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Thanh điều hướng Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Thương hiệu / Logo -->
+            <a class="navbar-brand text-warning fw-bold" href="#">MyWebsite</a>
+            
+            <!-- Nút Toggler mở menu trên thiết bị di động (Mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Danh sách menu điều hướng -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    
+                    <!-- Menu Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web Design</a></li>
+                            <li><a class="dropdown-item" href="#">SEO Optimization</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Nội dung minh họa giao diện bên dưới Navbar -->
+    <div class="container mt-5 text-center">
+        <div class="p-5 bg-light rounded-3 shadow-sm">
+            <h1 class="display-5 fw-bold text-primary">Thực Hành Bootstrap 5 Navbar</h1>
+            <p class="lead mt-3">Thanh điều hướng chuyên nghiệp, tự động co giãn Responsive linh hoạt trên mọi kích thước màn hình.</p>
+            <p class="text-muted">Thử thu nhỏ cửa sổ trình duyệt để kiểm tra nút Hamburger Menu trên giao diện di động.</p>
+        </div>
+    </div>
+
+    <!-- Nhúng JavaScript Bootstrap 5.3 Bundle (bao gồm Popper.js để chạy Dropdown & Toggler) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
