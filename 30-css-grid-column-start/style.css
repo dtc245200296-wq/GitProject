@@ -1,0 +1,86 @@
+/* Thiết lập cơ bản toàn trang */
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+h2 {
+    color: #1a237e;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.example-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.example-section h3 {
+    color: #283593;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.example-section code {
+    background-color: #e8eaf6;
+    color: #1a237e;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Khung chứa Grid chung */
+.grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.grid-container div {
+    background-color: #4fc3f7;
+    color: #01579b;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* 1. Ví dụ 1: grid-column-start: auto */
+.grid-auto {
+    grid-template-columns: 100px 100px 100px;
+}
+
+.grid-auto .item1 {
+    grid-column-start: auto;
+    background-color: #ffb74d;
+    color: #e65100;
+}
+
+/* 2. Ví dụ 2: grid-column-start: span 2 */
+.grid-span {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-span .item1 {
+    grid-column-start: span 2;
+    background-color: #81c784;
+    color: #1b5e20;
+}
+
+/* 3. Ví dụ 3: grid-column-start: 2 */
+.grid-line {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-line .item1 {
+    grid-column-start: 2; /* Bắt đầu từ đường kẻ số 2 (Cột 2) */
+    background-color: #ba68c8;
+    color: #4a148c;
+}
