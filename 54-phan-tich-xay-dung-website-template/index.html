@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân Tích & Xây Dựng Cấu Trúc Website Template</title>
+    <!-- Nhúng CSS tùy chỉnh -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header Section -->
+    <header class="header">
+        <div class="container header-container">
+            <h1 class="logo">TechPortal</h1>
+            <p class="tagline">Trang Thông Tin Công Nghệ & Lập Trình</p>
+        </div>
+    </header>
+
+    <!-- 2. Navigation Menu -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Trang Chủ</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#services">Dịch Vụ</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 3. Content Section (Main Content + Sidebar) -->
+    <section class="main-layout container">
+        <!-- Cột Nội Dung Chính -->
+        <main class="content-area">
+            <article class="card">
+                <h2>Cấu Trúc HTML5 Chuẩn Cho Website Modern</h2>
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Hình ảnh minh họa bài viết">
+                <p>Mỗi trang web hiện đại đều cần một cấu trúc bố cục rõ ràng bao gồm các thẻ semantics như <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> và <code>&lt;footer&gt;</code> nhằm tối ưu hóa trải nghiệm người dùng và chuẩn SEO Google.</p>
+            </article>
+
+            <article class="card">
+                <h2>Tầm Quan Trọng Của CSS Flexbox & Grid</h2>
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Hình ảnh minh họa CSS Grid">
+                <p>Flexbox giúp căn chỉnh linh hoạt các phần tử theo hàng hoặc cột, trong khi CSS Grid cho phép phân chia giao diện phức tạp thành các vùng rõ ràng một cách nhanh chóng.</p>
+            </article>
+        </main>
+
+        <!-- Cột Sidebar Bên Phải -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Về Chúng Tôi</h3>
+                <p>TechPortal chia sẻ kiến thức thiết kế web, lập trình và các xu hướng công nghệ mới nhất.</p>
+            </div>
+            <div class="widget">
+                <h3>Tin Nổi Bật</h3>
+                <ul>
+                    <li><a href="#">Hướng dẫn HTML/CSS từ cơ bản</a></li>
+                    <li><a href="#">Tạo Layout Responsive dễ dàng</a></li>
+                    <li><a href="#">Các mẹo tối ưu tốc độ website</a></li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+
+    <!-- 4. Footer Section -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 TechPortal. Tất cả quyền được bảo lưu. | CodeGym Practice Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>
