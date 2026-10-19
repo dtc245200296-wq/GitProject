@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố Cục Responsive CSS Grid</title>
+    <!-- Liên kết tệp CSS cùng thư mục -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung chứa Grid Container chính -->
+    <div class="container">
+        
+        <!-- 1. Header -->
+        <header class="header">
+            <h1>Trang Web Responsive Với CSS Grid</h1>
+            <p>Hệ thống bố cục linh hoạt cho Desktop & Mobile</p>
+        </header>
+
+        <!-- 2. Navigation Menu -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#" class="active">Trang chủ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- 3. Main Content -->
+        <main class="content">
+            <h2>Nội dung chính của trang</h2>
+            <article class="post">
+                <h3>Kỹ thuật Dàn Trang Với CSS Grid Areas</h3>
+                <p>CSS Grid cho phép định nghĩa các vùng không gian đặt tên (Grid Areas) giúp việc phân chia bố cục giữa Header, Navigation, Main Content, Sidebar và Footer trở nên vô cùng mạch lạc và dễ quản lý.</p>
+            </article>
+            <article class="post">
+                <h3>Khả Năng Tương Thích Responsive</h3>
+                <p>Trên màn hình máy tính (Desktop), nội dung chính và sidebar được đặt nằm cạnh nhau. Khi chuyển sang điện thoại (Mobile với màn hình &le; 768px), các thành phần sẽ tự động xếp dọc lên nhau.</p>
+            </article>
+        </main>
+
+        <!-- 4. Sidebar -->
+        <aside class="sidebar">
+            <h3>Sidebar - Tin Phụ</h3>
+            <div class="widget">
+                <h4>Quảng cáo / Tin hot</h4>
+                <p>Thông tin các khóa học lập trình web mới nhất tại CodeGym.</p>
+            </div>
+            <div class="widget">
+                <h4>Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="#">Tài liệu HTML5 & CSS3</a></li>
+                    <li><a href="#">Thực hành Flexbox</a></li>
+                    <li><a href="#">Thực hành CSS Grid</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- 5. Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 CodeGym. Bản quyền thuộc về khóa học Lập trình Web Front-End.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

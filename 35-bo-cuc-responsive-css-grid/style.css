@@ -1,0 +1,177 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* 1. ĐỊNH DẠNG CSS GRID TRÊN DESKTOP */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;            /* Main content chiếm 3 phần, Sidebar chiếm 1 phần */
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "content sidebar"
+        "footer footer";
+    min-height: 100vh;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* 2. GÁN CÁC PHẦN TỬ VÀO VÙNG GRID AREAS */
+.header {
+    grid-area: header;
+    background-color: #1a237e;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 6px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #e8eaf6;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #283593;
+    border-radius: 6px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    background-color: #ff9800;
+}
+
+.content {
+    grid-area: content;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.content h2 {
+    color: #1a237e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1a237e;
+    padding-bottom: 8px;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #ff9800;
+    border-radius: 4px;
+}
+
+.post h3 {
+    color: #283593;
+    margin-bottom: 8px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h3 {
+    color: #1a237e;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1a237e;
+    padding-bottom: 5px;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+.widget h4 {
+    color: #283593;
+    margin-bottom: 8px;
+}
+
+.widget ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.widget ul li a {
+    color: #1a237e;
+    text-decoration: none;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #1a237e;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+/* 3. RESPONSIVE CHO MOBILE (Màn hình &le; 768px) */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;            /* Chuyển toàn bộ thành 1 cột */
+        grid-template-areas: 
+            "header"
+            "nav"
+            "content"
+            "sidebar"
+            "footer";
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
