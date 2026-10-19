@@ -1,0 +1,179 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* 1. Thiết lập Flexbox cho Container tổng */
+.site-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 2. Header */
+.site-header {
+    background-color: #1a237e;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.site-header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.site-header p {
+    font-size: 14px;
+    color: #c5cae9;
+}
+
+/* 3. Navigation Menu sử dụng Flexbox ngang */
+.site-nav {
+    background-color: #283593;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.site-nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.site-nav ul li a:hover,
+.site-nav ul li a.active {
+    background-color: #ff9800;
+}
+
+/* 4. Khung Bố Cục Chính (Desktop View) */
+.main-layout {
+    display: flex;
+    flex: 1; /* Chiếm toàn bộ phần khoảng trống còn lại */
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 15px;
+    gap: 20px;
+}
+
+/* Nội dung chính chiếm 3 phần */
+.site-content {
+    flex: 3;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.site-content h2 {
+    color: #1a237e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1a237e;
+    padding-bottom: 8px;
+}
+
+.card {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #ff9800;
+    border-radius: 4px;
+}
+
+.card h3 {
+    color: #283593;
+    margin-bottom: 8px;
+}
+
+.card code {
+    background-color: #e8eaf6;
+    color: #1a237e;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Sidebar chiếm 1 phần */
+.site-sidebar {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.site-sidebar h3 {
+    color: #1a237e;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1a237e;
+    padding-bottom: 8px;
+}
+
+.sidebar-block {
+    margin-bottom: 20px;
+}
+
+.sidebar-block h4 {
+    color: #283593;
+    margin-bottom: 8px;
+}
+
+.sidebar-block ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.sidebar-block ul li a {
+    color: #1a237e;
+    text-decoration: none;
+}
+
+.sidebar-block ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 5. Footer */
+.site-footer {
+    background-color: #1a237e;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* 6. Responsive cho Mobile (Màn hình dưới 768px) */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column; /* Chuyển Content & Sidebar thành xếp dọc */
+        margin: 10px auto;
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-nav ul li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
