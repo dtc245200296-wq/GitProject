@@ -1,0 +1,84 @@
+/* Thiết lập cơ bản toàn trang */
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+h2 {
+    color: #1a237e;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.example-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.example-section h3 {
+    color: #283593;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.example-section code {
+    background-color: #e8eaf6;
+    color: #1a237e;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Khung chứa Flex Container chung */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    background-color: #eeeeee;
+    padding: 15px;
+    border-radius: 6px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+/* Định dạng các Flex Items chung */
+.item {
+    background-color: lightblue;
+    color: #0d47a1;
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* 1. Ví dụ 1: Chỉ Item 2 áp dụng flex-grow: 1 */
+.ex1 .item2-grow {
+    flex-grow: 1;
+    background-color: #ffb74d;
+    color: #e65100;
+}
+
+/* 2. Ví dụ 2: So sánh tỷ lệ flex-grow giữa các items */
+.ex2 .item-g0 {
+    flex-grow: 0;
+    background-color: #e0e0e0;
+    color: #424242;
+}
+
+.ex2 .item-g1 {
+    flex-grow: 1;
+    background-color: #81c784;
+    color: #1b5e20;
+}
+
+.ex2 .item-g2 {
+    flex-grow: 2;
+    background-color: #ff8a65;
+    color: #bf360c;
+}
