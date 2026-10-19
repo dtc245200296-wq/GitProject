@@ -1,0 +1,58 @@
+/* Reset CSS áp dụng tính toán kích thước bao gồm padding/border */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+h1 {
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+/* Khung chứa 2 cột float, dùng overflow: hidden để ôm trọn các phần tử con (Clearfix) */
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.left-column {
+    width: 50%;
+    float: left;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.right-column {
+    width: 50%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.left-column h3, .right-column h3, .overflow-box h3 {
+    margin-top: 0;
+    color: #1a237e;
+}
+
+/* Khối nội dung có kích thước cố định và tự động xuất hiện thanh cuộn */
+.overflow-box {
+    width: 300px;
+    height: 120px;
+    background-color: lightcoral;
+    padding: 10px;
+    overflow: auto; /* Tự động hiển thị thanh cuộn khi văn bản bị tràn */
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+.overflow-box h3 {
+    color: #ffffff;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục với Float và Overflow</title>
+    <!-- Liên kết tệp CSS cùng thư mục -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Bố cục trang với float và overflow</h1>
+
+    <!-- Khung chứa 2 cột sử dụng float -->
+    <div class="container">
+        <div class="left-column">
+            <h3>Nội dung bên trái</h3>
+            <p>Cột này chiếm 50% chiều rộng và sử dụng <code>float: left</code> để dạt về bên trái.</p>
+        </div>
+        <div class="right-column">
+            <h3>Nội dung bên phải</h3>
+            <p>Cột này chiếm 50% chiều rộng và sử dụng <code>float: right</code> để dạt về bên phải.</p>
+        </div>
+    </div>
+
+    <!-- Khung kiểm tra xử lý tràn nội dung bằng overflow -->
+    <div class="overflow-box">
+        <h3>Khối Overflow</h3>
+        <p>Đây là nội dung rất dài mà chúng ta kiểm tra overflow. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nunc in mauris pharetra, a ultricies justo fermentum. Curabitur vel leo pretium, pulvinar diam ac, tincidunt neque. Fusce non dui vel nibh efficitur interdum.</p>
+    </div>
+
+</body>
+</html>
