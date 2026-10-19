@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Development Template</title>
+    <!-- Nhúng font chữ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,700;1,8..30,700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Liên kết tệp CSS cùng thư mục -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Thanh điều hướng Navigation -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="https://via.placeholder.com/180x50/333333/ffffff?text=WebLogo" alt="Logo">
+            </div>
+            <li><a href="#web">Web Technology</a></li>
+            <li><a href="#program">C Programming</a></li>
+            <li><a href="#java">Java</a></li>
+        </ul>
+
+        <div class="rightNav">
+            <input type="text" name="search" id="search" placeholder="Search...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <!-- Section 1: Web Technology -->
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">Web Technology</h1>
+                <p class="text-small">
+                    HTML stands for HyperText Markup Language. It is used to design web pages using a markup language.
+                    HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web
+                    pages. A markup language is used to define the text document within tag which defines the structure of
+                    web pages. HTML is a markup language that is used by the browser to manipulate text, images, and other
+                    content to display it in the required format.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: C Programming -->
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="secondHalf">
+                <h1 class="text-big" id="program">C Programming</h1>
+                <p class="text-small">
+                    C is a procedural programming language. It was initially developed by Dennis Ritchie as a system programming
+                    language to write operating system. The main features of C language include low-level access to memory, simple set
+                    of keywords, and clean style, these features make C language suitable for system programming like operating system
+                    or compiler development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Java (Kết hợp Hình ảnh Flexbox) -->
+    <section class="section" id="java">
+        <div class="paras">
+            <h1 class="sectionTag text-big">Java</h1>
+            <p class="sectionSubTag text-small">
+                Java has been one of the most popular programming language for many years. Java is Object Oriented.
+                However it is not considered as pure object oriented as it provides support for primitive data types
+                (like int, char, etc). The Java codes are first compiled into byte code (machine independent code).
+                Then the byte code is run on Java Virtual Machine (JVM) regardless of the underlying architecture.
+            </p>
+        </div>
+
+        <div class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Laptop Image">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2026 - All rights reserved
+        </p>
+    </footer>
+
+</body>
+</html>
