@@ -1,0 +1,23 @@
+/* Tùy chỉnh CSS nhẹ cho bài thực hành */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Khống chế chiều cao ảnh trong Carousel */
+.carousel-img {
+    height: 420px;
+    object-fit: cover;
+}
+
+.max-w-700 {
+    max-width: 700px;
+}
+
+.card {
+    background-color: #ffffff;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
