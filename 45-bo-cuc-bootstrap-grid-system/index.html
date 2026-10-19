@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố Cục Trang Web Với Bootstrap Grid System</title>
+    <!-- Nhúng Bootstrap 5.3 CSS từ CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Tệp CSS tùy chỉnh -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- 1. Header Section -->
+    <header class="bg-primary text-white text-center py-4 shadow-sm">
+        <div class="container">
+            <h1 class="fw-bold mb-1">Thực Hành Bootstrap Grid System</h1>
+            <p class="mb-0 opacity-75">Bố cục Responsive hai cột cho Desktop và một cột cho Mobile</p>
+        </div>
+    </header>
+
+    <!-- 2. Navbar Section (có Dropdown Menu) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold" href="#">CodeGym Grid</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới Thiệu</a>
+                    </li>
+
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Khóa Học
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HTML5 & CSS3</a></li>
+                            <li><a class="dropdown-item" href="#">Bootstrap 5 Layout</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">JavaScript ES6</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên Hệ</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Tìm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. Main Content & Sidebar Section (Bootstrap Grid System) -->
+    <main class="container my-4 flex-grow-1">
+        <div class="row g-4">
+            
+            <!-- Cột Nội Dung Chính: col-lg-8 col-12 (2 cột trên desktop ≥992px, 1 cột trên mobile) -->
+            <section class="col-lg-8 col-12">
+                <div class="card border-0 shadow-sm p-4">
+                    <h2 class="text-primary fw-bold mb-3">Nội Dung Chính (Main Content)</h2>
+                    <p class="lead text-secondary">
+                        Hệ thống Bootstrap Grid System chia bố cục theo nguyên tắc 12 cột. Trong ví dụ này, phần nội dung chính chiếm <strong>8 cột (col-lg-8)</strong> trên màn hình máy tính (Desktop &ge; 992px).
+                    </p>
+                    
+                    <hr class="my-4">
+
+                    <article class="mb-4">
+                        <h3 class="h5 fw-bold text-dark">1. Tính Năng Responsive Tự Động</h3>
+                        <p class="text-muted">
+                            Khi thu nhỏ màn hình xuống kích thước thiết bị di động (&lt; 992px), lớp <code>col-12</code> sẽ tự động kích hoạt giúp nội dung chính và sidebar xếp chồng lên nhau thành 1 cột gọn gàng.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3 class="h5 fw-bold text-dark">2. Tích Hợp Thẻ Card Bootstrap</h3>
+                        <p class="text-muted">
+                            Các khối thông tin được đóng gói trong thẻ Card của Bootstrap giúp giao diện trực quan, sạch sẽ và hiện đại hơn.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Cột Sidebar: col-lg-4 col-12 (Phần thông tin phụ) -->
+            <aside class="col-lg-4 col-12">
+                <div class="card border-0 shadow-sm p-4 mb-4">
+                    <h3 class="h5 fw-bold text-primary mb-3">Thanh Bên (Sidebar)</h3>
+                    <p class="text-secondary small">Thanh bên chiếm <strong>4 cột (col-lg-4)</strong> trên màn hình rộng và sẽ tự xếp xuống dưới trên mobile.</p>
+                    
+                    <div class="list-group list-group-flush mt-2">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                            Tin tức mới nhất
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">Hướng dẫn Grid System</a>
+                        <a href="#" class="list-group-item list-group-item-action">Mẹo tối ưu Responsive</a>
+                        <a href="#" class="list-group-item list-group-item-action">Tài liệu Bootstrap 5</a>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm p-4 bg-primary text-white">
+                    <h4 class="h6 fw-bold">Thông Báo Nổi Bật</h4>
+                    <p class="small mb-0">Đăng ký khóa học Lập trình Web Front-End ngay hôm nay để nhận ưu đãi đặc biệt từ CodeGym!</p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- 4. Footer Section -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2026 CodeGym. Bản quyền bài tập Bootstrap Grid System.</p>
+        </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap 5.3 JavaScript Bundle từ CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
